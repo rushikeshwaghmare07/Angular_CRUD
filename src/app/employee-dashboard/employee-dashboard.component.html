@@ -1,0 +1,76 @@
+<nav class="navbar navbar-light bg-primary shadow">
+    <div class="container-fluid">
+        <h1 style="color: aliceblue;" class="bi bi-stars"> Angular CRUD</h1>
+        <div class="d-flex">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-warning bi bi-plus-lg"> Add Employee</button>
+        </div>
+    </div>
+</nav>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Employee ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email ID</th>
+            <th scope="col">Mobile No.</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Wick</td>
+            <td>john&#64;gmail.com</td>
+            <td>1234567890</td>
+            <td>$ 20,000</td>
+            <td>
+                <button class="btn btn-info bi bi-pencil-square"> Edit</button>
+                <button class="btn btn-danger mx-3 bi bi-trash3"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Employee Details</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName">
+                </div>
+                <div class="mb-3">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName">
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Email ID</label>
+                    <input type="text" class="form-control" id="lastName">
+                  </div>
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" id="lastName">
+                  </div>
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label">Salary</label>
+                    <input type="text" class="form-control" id="lastName">
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Add</button>
+        </div>
+        </div>
+    </div>
+</div>
