@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "firstName": "John",
       "lastName": "Wick",
       "email": "john@gamil.com",
@@ -9,7 +9,7 @@
       "salary": "10000"
     },
     {
-      "id": 2,
+      "id": "2",
       "firstName": "Tony",
       "lastName": "Stark",
       "email": "tony@gmail.com",
@@ -17,12 +17,24 @@
       "salary": "20000"
     },
     {
-      "id": 3,
+      "id": "3",
       "firstName": "Peter",
       "lastName": "Parker",
       "email": "peter@gmail.com",
       "mobile": "4561237890",
       "salary": "30000"
     }
-  ]
+  ],
+  "signupUsers": [
+    {
+      "id": "a472",
+      "fullName": "Captain America",
+      "email": "captain@gamil.com",
+      "password": "Captain@123",
+      "mobile": 1122334455
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
