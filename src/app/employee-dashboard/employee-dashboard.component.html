@@ -20,16 +20,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>John</td>
-            <td>Wick</td>
-            <td>john&#64;gmail.com</td>
-            <td>1234567890</td>
-            <td>$ 20,000</td>
+        <tr *ngFor="let row of employeeData">
+            <td>{{row.id}}</td>
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.email}}</td>
+            <td>{{row.mobile}}</td>
+            <td>{{row.salary}}</td>
             <td>
-                <button class="btn btn-info bi bi-pencil-square"> Edit</button>
-                <button class="btn btn-danger mx-3 bi bi-trash3"> Delete</button>
+                <button (click)="onEdit(row)" class="btn btn-info bi bi-pencil-square" data-bs-toggle="modal" data-bs-target="#exampleModal"> Edit</button>
+                <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3 bi bi-trash3"> Delete</button>
             </td>
         </tr>
     </tbody>
@@ -44,32 +44,33 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form>
+            <form [formGroup]="formValue">
                 <div class="mb-3">
                   <label for="firstName" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="firstName">
+                  <input type="text" class="form-control" id="firstName" formControlName="firstName">
                 </div>
                 <div class="mb-3">
                   <label for="lastName" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="lastName">
+                  <input type="text" class="form-control" id="lastName" formControlName="lastName">
                 </div>
                 <div class="mb-3">
                     <label for="lastName" class="form-label">Email ID</label>
-                    <input type="text" class="form-control" id="lastName">
+                    <input type="text" class="form-control" id="lastName" formControlName="email">
                   </div>
                   <div class="mb-3">
                     <label for="lastName" class="form-label">Mobile No.</label>
-                    <input type="text" class="form-control" id="lastName">
+                    <input type="text" class="form-control" id="lastName" formControlName="mobile">
                   </div>
                   <div class="mb-3">
                     <label for="lastName" class="form-label">Salary</label>
-                    <input type="text" class="form-control" id="lastName">
+                    <input type="text" class="form-control" id="lastName" formControlName="salary">
                   </div>
               </form>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Add</button>
+            <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
+            <button type="button" (click)="updateEmployeeDetails()" class="btn btn-primary">Update</button>
         </div>
         </div>
     </div>

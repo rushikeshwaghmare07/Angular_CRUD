@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "",
+      "firstName": "sha",
+      "lastName": "asd",
+      "email": "sha@gamil.com",
+      "mobile": "7899456612",
+      "salary": "14785236"
+    },
+    {
+      "id": null,
+      "firstName": "Rushikesh",
+      "lastName": "rushikeshwaghmare862@gmail.com",
+      "email": "rushikeshwaghmare862@gmail.com",
+      "mobile": "07741870438",
+      "salary": "1111111111111111111"
+    },
+    {
+      "id": 0,
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "mobile": "",
+      "salary": ""
+    }
+  ]
+}
