@@ -1,28 +1,28 @@
 {
   "posts": [
     {
-      "id": "",
-      "firstName": "sha",
-      "lastName": "asd",
-      "email": "sha@gamil.com",
-      "mobile": "7899456612",
-      "salary": "14785236"
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Wick",
+      "email": "john@gamil.com",
+      "mobile": "1234567890",
+      "salary": "10000"
     },
     {
-      "id": null,
-      "firstName": "Rushikesh",
-      "lastName": "rushikeshwaghmare862@gmail.com",
-      "email": "rushikeshwaghmare862@gmail.com",
-      "mobile": "07741870438",
-      "salary": "1111111111111111111"
+      "id": 2,
+      "firstName": "Tony",
+      "lastName": "Stark",
+      "email": "tony@gmail.com",
+      "mobile": "7894561230",
+      "salary": "20000"
     },
     {
-      "id": 0,
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "mobile": "",
-      "salary": ""
+      "id": 3,
+      "firstName": "Peter",
+      "lastName": "Parker",
+      "email": "peter@gmail.com",
+      "mobile": "4561237890",
+      "salary": "30000"
     }
   ]
 }
